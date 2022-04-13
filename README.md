@@ -177,8 +177,7 @@
 
 ### 3.4 API 명세서
 
- [API 명세서.html](README.assets/API 명세서.html) 
-
+![API_명세서](https://user-images.githubusercontent.com/86656921/163210481-4bb82398-e5b8-4946-a23f-dc3c787e7e22.png)
 
 
 ### 3.5 요구사항 명세서
