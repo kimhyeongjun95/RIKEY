@@ -1,6 +1,7 @@
 # 나의 라이딩 메이트, RIKEY 🚲
 
 > RIDE + BIKE = RIKEY 💚
+> 삼성청년SW아카데미 2학기 특화 프로젝트 우수상 수상
 
 ![rikey_logo](README.assets/rikey_logo.png)
 
