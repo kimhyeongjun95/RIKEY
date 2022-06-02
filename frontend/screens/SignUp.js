@@ -19,31 +19,24 @@ const SignUp = ({ route, navigation }) => {
 
 		const id = route.params.id;
 
-		const RIKEYSignUp = () => {
-			API.post('users', {
-				"area" : area,
-				"authId" : id,
-				"greeting" : intro,
-				"nickName" : nickName,
-				"height" : height,
-				"weight" : weight,
-			})
-
-			.then((response) => {
-				console.log(response);
+		const RIKEYSignUp = async () => {
+			try {
+				const response = await API.post('users', {
+					"area" : area,
+					"authId" : id,
+					"greeting" : intro,
+					"nickName" : nickName,
+					"height" : height,
+					"weight" : weight,
+				})
 				setUserId(response.data.profile.id);
 				setUserNickName(response.data.profile.nickName);
 				setUserArea(response.data.profile.area.name)
-
 				navigation.navigate('Tabs')
-
-			})
-
-			.catch((e) => {
+			} catch (e) {
 				alert("이미 사용 중인 닉네임입니다!")
-				console.log(e);
-				
-			})
+				console.warn(e);
+			}
 		}
 
     return (
