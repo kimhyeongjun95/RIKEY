@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Button, KeyboardAvoidingView, ScrollView } from 'react-native'
+import { KeyboardAvoidingView, ScrollView } from 'react-native'
 import { NativeBaseProvider, Select, Center, Box, CheckIcon } from "native-base";
-import React, { useState, useEffect} from "react";
+import React, { useState } from "react";
 import Logo from '../assets/images/RIKEY_LOGO.png'
 import API from "../api/API";
 import { useStore } from "../states";
@@ -13,9 +13,7 @@ const SignUp = ({ route, navigation }) => {
 		const [height, setHeight] = useState('');
 		const [weight, setWeight] = useState('');
 		
-		const { setUserId } = useStore();
-		const { setUserNickName } = useStore();
-		const { setUserArea } = useStore();
+		const { setUserId, setUserNickName, setUserArea } = useStore();
 
 		const id = route.params.id;
 
