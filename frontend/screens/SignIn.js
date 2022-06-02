@@ -109,6 +109,7 @@ const SignIn = ({ navigation }) => {
       return;
     }
     catch(e)  {
+      console.warn(e);
     }
   }
 
